@@ -1,0 +1,10 @@
+.not-found-card{
+  display:flex;
+  flex-direction:column;
+  justify-content : center;
+  text-align:center;
+}
+
+.not-found-image{
+  height: 60vh;
+}
