@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json())
 app.use(cors(
     {
-        origin:["https://node-n-mongo-db.vercel.app/"],
+        origin:["https://node-n-mongodb-frontend.vercel.app/login"],
         methods:["POST","GET","PUT","DELETE"],
         credentials : true
     }
