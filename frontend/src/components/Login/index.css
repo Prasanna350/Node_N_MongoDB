@@ -1,0 +1,41 @@
+.form-request-msg{
+    font-size:13px;
+    color:#252424;
+    margin: 8px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.form-input-field-card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin:10px 0px;
+}
+
+.form-input-label{
+    font-size:15px;
+    margin-bottom:5px;
+    color:#1b4d28;
+    font-weight:500;
+}
+
+.form-input-ele{
+    height:25px;
+    width:80%;
+    border:1px solid #bbb7b7;
+    padding-left:10px;
+}
+
+.log-sig-btn{
+    border:0px;
+    border-radius: 10px;
+    color:white;
+    background-color: #1b4d28;
+    padding:10px 20px;
+    cursor: pointer;
+}
+
+
+
+

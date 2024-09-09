@@ -1,0 +1,61 @@
+
+.form-body-bg{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-card-bg{
+   border-radius:10px;
+   box-shadow: 10px 10px 10px #555252;
+   height:60vh;
+   margin:15px;
+   padding:10px 20px;
+}
+
+.form-blog-icon-Card{
+    display: flex;
+    align-items: center;
+    padding: 10px ;
+}
+
+.form-blog-logo-b{
+    font-family:cursive;
+    padding:3px 20px;
+    margin:0px 5px;
+    border: 5px solid #1b4d28;
+    border-radius: 30px 30px 30px 0px;
+}
+
+.form-blog-logo-img{
+    height:30px;
+}
+
+.form-blog-logo-name{
+    font-family: 'Courier New', Courier, monospace;
+    margin:0px 5px;
+}
+
+.form-greeting-msg{
+    font-size:18px;
+    color:#252424;
+    margin: 5px;
+
+}
+
+@media (min-width:768px) {
+    .form-card-bg{
+        width:25vw;
+        padding:30px;
+    }
+
+    
+}
+
+@media (max-width:767px){
+    .form-card-bg{
+        width:70vw;
+        height:65vh;
+    }
+}
