@@ -16,7 +16,7 @@ class SignUp extends Component{
         
         const {username,password} = this.state 
         const userDetails = {username,password};
-        const url = `http://localhost:5004/register`
+        const url = `https://node-n-mongo-db.vercel.app/register`
         const options = {
             method : "POST",
             headers: {
