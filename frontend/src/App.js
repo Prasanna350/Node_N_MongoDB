@@ -14,7 +14,7 @@ function App() {
         <Route path = "/signup" element = {<SignUp/>}/>
         <Route path = "/" element = {<ProtectedRoute><Home/></ProtectedRoute>}/>
         <Route path = "/not-found" element = {<ProtectedRoute><Notfound/></ProtectedRoute>}/>   
-        <Redirect to = "/not-found"/>
+        <Route path="*" element={<Navigate to="/not-found" />} />
     </Routes>
     </BrowserRouter>
     
