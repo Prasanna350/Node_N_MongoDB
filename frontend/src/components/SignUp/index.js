@@ -24,14 +24,22 @@ class SignUp extends Component{
             },
             body : JSON.stringify(userDetails),
         }
-        const response = await fetch(url,options)
-        
-        if (response.ok){
-            this.onSuccessfulRegistration()
-        }else{
-            const errorData = await response.text();
-            this.setState({errorMsg:errorData})
-        }
+        console.log("Submitting Sign Up Form with:", userDetails); // Debugging line
+    try {
+      const response = await fetch(url, options);
+      console.log("Response Status:", response.status); // Debugging line
+      
+      if (response.ok) {
+        this.onSuccessfulRegistration();
+      } else {
+        const errorData = await response.text();
+        console.log("Error Data:", errorData); // Debugging line
+        this.setState({ errorMsg: errorData });
+      }
+    } catch (error) {
+      console.error("Error during fetch:", error); // Debugging line
+      this.setState({ errorMsg: "Network error" });
+    }
     }
 
     onChangeUsernameInSignUp = event => {
