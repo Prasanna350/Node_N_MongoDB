@@ -11,7 +11,13 @@ const cors = require("cors")
 
 const app = express();
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+    {
+        origin:["https://node-n-mongo-db.vercel.app/"],
+        methods:["POST","GET","PUT","DELETE"],
+        credentials : true
+    }
+))
 
 mongoose.connect("mongodb+srv://pashadeviprasanna:DIU2PMOUGoEXBjKG@backenddb.1buhn.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB")
 .then(()=>{
